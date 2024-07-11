@@ -1,3 +1,5 @@
+import userService from "../services/userService";
+
 let getHomepage = (req, res) => {
     return res.render('homepage.ejs');
 };
@@ -6,8 +8,11 @@ let getRegisterPage = (req, res) => {
     return res.render('register.ejs');
 }
 
-let createNewUser = (req, res) => {
-    console.log(req.body);
+let createNewUser = async (req, res) => {
+    let user = req.body
+    let message = await userService.createNewUser(user);
+    console.log(message);
+    return res.redirect("/")
 }
 
 module.exports = {

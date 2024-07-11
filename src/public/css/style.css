@@ -362,11 +362,11 @@ strong {
 }
 .main_title_3 h3:before {
   left: 25%;
-  background: url(../img/arrow_left.png) no-repeat 0 0;
+  background: url(../images/arrow_left.png) no-repeat 0 0;
 }
 .main_title_3 h3:after {
   right: 25%;
-  background: url(../img/arrow_right.png) no-repeat 0 0;
+  background: url(../images/arrow_right.png) no-repeat 0 0;
 }
 
 .main_title_4 {
@@ -614,7 +614,7 @@ ul#top_access li#user figure img {
   width: 163px;
   height: 36px;
   display: block;
-  background: url(../img/logo.png) no-repeat 0 0;
+  background: url(../images/logo.png) no-repeat 0 0;
   background-size: 163px 36px;
   text-indent: -9999px;
 }
@@ -785,7 +785,7 @@ ul#additional_links li:after {
   }
 }
 .hero_home.version_1 {
-  background: #3f4079 url(../img/hero_home_bg_1.svg) no-repeat center bottom;
+  background: #3f4079 url(../images/hero_home_bg_1.svg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -809,7 +809,7 @@ ul#additional_links li:after {
   display: block;
 }
 .hero_home.version_2:before {
-  background: #3f4079 url(../img/home_1_bg.jpg) no-repeat center center fixed;
+  background: #3f4079 url(../images/home_1_bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -852,7 +852,7 @@ ul#additional_links li:after {
   }
 }
 .hero_home.version_3 {
-  background: #3f4079 url(../img/hero_home_bg_1.svg) no-repeat center bottom;
+  background: #3f4079 url(../images/hero_home_bg_1.svg) no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1151,7 +1151,7 @@ ul#additional_links li:after {
   #custom-search-input input[type='submit'] {
     /* For less than 575px */
     text-indent: -999px;
-    background: #74d1c6 url(../img/search.svg) no-repeat center center;
+    background: #74d1c6 url(../images/search.svg) no-repeat center center;
   }
 }
 
@@ -1492,7 +1492,7 @@ a.box_cat_home ul li strong {
 }
 
 #app_section {
-  background: #3f4079 url(../img/hero_bg_1.svg) repeat fixed;
+  background: #3f4079 url(../images/hero_bg_1.svg) repeat fixed;
   padding: 90px 0 60px 0;
   color: #fff;
 }
@@ -1696,7 +1696,7 @@ iframe {
 
 @media (max-width: 1024px) {
   #hero_video {
-    background: #3f4079 url(../img/hero_bg_1.svg) repeat fixed;
+    background: #3f4079 url(../images/hero_bg_1.svg) repeat fixed;
   }
 
   .header-video {
@@ -2371,7 +2371,7 @@ a.wish_bt:hover:after {
   border: 0;
   width: 35px;
   height: 35px;
-  background: url(../img/search.svg) no-repeat center right;
+  background: url(../images/search.svg) no-repeat center right;
   cursor: pointer;
 }
 
@@ -3085,7 +3085,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 
 label.css-label {
-  background-image: url(../img/checkbox.png);
+  background-image: url(../images/checkbox.png);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -3636,7 +3636,7 @@ a.social_bt.linkedin:before {
 }
 
 #hero_register {
-  background: #3f4079 url(../img/hero_bg_1.svg) repeat fixed;
+  background: #3f4079 url(../images/hero_bg_1.svg) repeat fixed;
   color: #fff;
 }
 #hero_register h1 {
@@ -3676,7 +3676,7 @@ a.social_bt.linkedin:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #3f4079 url(../img/hero_bg_1.svg) repeat fixed;
+  background: #3f4079 url(../images/hero_bg_1.svg) repeat fixed;
   color: #fff;
 }
 #error_page h2 {
@@ -4289,7 +4289,7 @@ ul.treatments.checkout li.total {
   margin-right: 3px;
   width: 37px;
   height: 37px;
-  background: url(../img/stars.svg) 0 -38px;
+  background: url(../images/stars.svg) 0 -38px;
 }
 
 .fileupload {
@@ -4312,7 +4312,7 @@ input[type=file]::-webkit-file-upload-button, input[type=file].invalid::-webkit-
   border: 0;
   border-radius: 3px;
   padding: 8px 10px 8px 38px;
-  background: #3f4079 url(../img/camera.svg) 8px center no-repeat;
+  background: #3f4079 url(../images/camera.svg) 8px center no-repeat;
   outline: none;
 }
 
@@ -4550,7 +4550,7 @@ a.box_feat_about h3 {
 }
 
 .bg_color_2 {
-  background: #3f4079 url(../img/hero_bg_1.svg) repeat fixed;
+  background: #3f4079 url(../images/hero_bg_1.svg) repeat fixed;
 }
 
 .form-control, .form-select {
