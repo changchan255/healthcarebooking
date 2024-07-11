@@ -7,6 +7,8 @@ let router = express.Router();
 
 let initAllWebRoutes = (app) =>{
     router.get("/", homepageController.getHomepage);
+    router.get("/register", homepageController.getRegisterPage);
+    router.post("/create-new-user", homepageController.createNewUser);
 
     return app.use("/", router);
 };
