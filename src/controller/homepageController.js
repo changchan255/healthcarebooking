@@ -5,7 +5,7 @@ let getHomepage = (req, res) => {
 };
 
 let getRegisterPage = (req, res) => {
-    return res.render('register.ejs');
+    return res.render('auth/register.ejs');
 }
 
 let createNewUser = async (req, res) => {
@@ -15,8 +15,36 @@ let createNewUser = async (req, res) => {
     return res.redirect("/")
 }
 
+let getLoginPage = (req, res) => {
+    return res.render('auth/login.ejs');
+};
+
+let handleRegister = async (req, res) => {
+    // validate input fields
+
+    // create a new user
+    try {
+        let user = {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            password: req.body.password,
+            confirmPassword: req.body.confirmPassword,
+            address: req.body.address,
+            createdAt: Date.now()
+        };
+        let message = await userService.createNewUser(user);
+        console.log(message);
+        return res.redirect("/")
+    }catch(err) {
+        console.log(err);
+    }
+};
+
 module.exports = {
     getHomepage: getHomepage,
     getRegisterPage: getRegisterPage,
-    createNewUser: createNewUser
+    createNewUser: createNewUser,
+    getLoginPage: getLoginPage,
+    handleRegister: handleRegister
 };
