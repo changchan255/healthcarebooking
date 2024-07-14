@@ -1,5 +1,6 @@
 import express from 'express';
 import homepageController from "../controller/homepageController";
+import auth from "../validation/authValidation";
 
 // init all web routes
 
@@ -10,7 +11,7 @@ let initAllWebRoutes = (app) =>{
     router.get("/register", homepageController.getRegisterPage);
     router.get("/login", homepageController.getLoginPage);
 
-    router.post("/register", homepageController.handleRegister);
+    router.post("/register", auth.validateRegister, homepageController.handleRegister);
     router.post("/create-new-user", homepageController.createNewUser);
 
     return app.use("/", router);

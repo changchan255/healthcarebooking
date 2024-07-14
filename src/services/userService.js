@@ -9,7 +9,7 @@ let createNewUser = (user) => {
             let isEmailExists = await checkEmailUser(user);
 
             if (isEmailExists) {
-                resolve(`Email ${user.email} already exists`);
+                reject(`Email ${user.email} already exists`);
             } else {
                 // hash the user's password
                     let salt = bcrypt.genSaltSync(10);
