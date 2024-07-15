@@ -25,7 +25,9 @@ let createNewUser = async (req, res) => {
 }
 
 let getLoginPage = (req, res) => {
-    return res.render('auth/login.ejs');
+    return res.render('auth/login.ejs', {
+        errors: req.flash('errors')
+    });
 };
 
 let handleRegister = async (req, res) => {

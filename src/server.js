@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 import connectFlash from "connect-flash";
 import cookieParser from "cookie-parser";
 import session from "express-session";
-import validator from "express-validator";
+import passport from "passport";
 
 let app = express();
 
@@ -30,6 +30,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //config view Engine
 configViewEngine(app);
+
+// config passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
 //init all web routes
 initAllWebRoutes(app);

@@ -1,6 +1,11 @@
 import express from 'express';
 import homepageController from "../controller/homepageController";
 import auth from "../validation/authValidation";
+import initPassportLocal from "../controller/passport/passportLocal";
+import passport from "passport";
+
+//init passport-local
+initPassportLocal();
 
 // init all web routes
 
@@ -12,6 +17,12 @@ let initAllWebRoutes = (app) =>{
     router.get("/login", homepageController.getLoginPage);
 
     router.post("/register", auth.validateRegister, homepageController.handleRegister);
+    router.post("/login", passport.authenticate("local", {
+        successRedirect: "/",
+        failureRedirect: "/login",
+        successFlash: true,
+        failureFlash: true
+    }));
     router.post("/create-new-user", homepageController.createNewUser);
 
     return app.use("/", router);
